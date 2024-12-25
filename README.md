@@ -6,13 +6,15 @@ README này cung cấp hướng dẫn về cách thiết lập và chạy pipeli
 
 Trước khi chạy pipeline, hãy đảm bảo bạn đã có:
 
-- **Jenkins** được cài đặt và cấu hình.
-- **Docker** được cài đặt trên máy chủ Jenkins.
-- **Git** được cài đặt trên máy chủ Jenkins.
+- **Jenkins** được cài đặt và cấu hình. 
+- **Docker** được cài đặt trên máy chủ Jenkins. 
+- **Git** được cài đặt trên máy chủ Jenkins. 
 - Tài khoản **Docker Hub** và thông tin đăng nhập được lưu trữ trong Jenkins dưới dạng `docker-hub-credentials`.
 - Một **EC2 instance AWS** được thiết lập để triển khai sản xuất, với quyền truy cập SSH được cấu hình.
 - Một **Bot Telegram** đã được tạo với token và chat ID được thiết lập trong các biến môi trường.
-
+- [Hướng dẫn triển khai Jenkins với Docker trên AWS EC2](https://viblo.asia/p/cach-trien-khai-mot-du-an-bang-jenkins-docker-ec2-3kY4gnD0VAe)
+- [Tạo CI/CD Pipeline với Jenkins trên Amazon ECS](https://locker.io/vi/blog/cach-tao-ci-cd-pipeline-voi-jenkins)
+- [Hướng dẫn cài đặt Jenkins trên AWS](https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/)
 ## Biến môi trường
 
 Hãy chắc chắn thiết lập các biến môi trường sau trong pipeline Jenkins của bạn:
