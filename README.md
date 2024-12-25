@@ -26,6 +26,16 @@ $ docker run -d --name jenkins \
     jenkins/jenkins:lts
 $ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+```
+$ docker exec -it --user root jenkins /bin/bash
+$ apt-get update
+$ apt-get install -y docker.io
+$ apt-get install -y docker-ce docker-ce-cli containerd.io
+$ docker --version
+$ usermod -aG docker jenkins
+$ docker restart jenkins
+$ chmod 666 /var/run/docker.sock
+```
 ## Biến môi trường
 
 Hãy chắc chắn thiết lập các biến môi trường sau trong pipeline Jenkins của bạn:
