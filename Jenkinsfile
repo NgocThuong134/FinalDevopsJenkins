@@ -6,7 +6,7 @@ pipeline {
         DOCKER_TAG = 'latest'
         TELEGRAM_BOT_TOKEN = '7649334871:AAF9YVvIXp3SlCAVS27BOUWMwisFCDZM0y4'
         TELEGRAM_CHAT_ID = '-1002452635800'
-        PROD_SERVER = 'ec2-54-169-202-206.ap-southeast-1.compute.amazonaws.com'
+        PROD_SERVER = 'ec2-18-141-140-203.ap-southeast-1.compute.amazonaws.com'
         PROD_USER =  'ubuntu'
     }
 
