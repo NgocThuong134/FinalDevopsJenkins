@@ -15,6 +15,17 @@ Trước khi chạy pipeline, hãy đảm bảo bạn đã có:
 - [Hướng dẫn triển khai Jenkins với Docker trên AWS EC2](https://viblo.asia/p/cach-trien-khai-mot-du-an-bang-jenkins-docker-ec2-3kY4gnD0VAe)
 - [Tạo CI/CD Pipeline với Jenkins trên Amazon ECS](https://locker.io/vi/blog/cach-tao-ci-cd-pipeline-voi-jenkins)
 - [Hướng dẫn cài đặt Jenkins trên AWS](https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/)
+
+## Hướng dẫn cài đặt Jenkins với Docker
+  ```
+$ docker pull jenkins/jenkins:lts
+$ docker run -d --name jenkins \
+    -p 8080:8080 -p 50000:50000 \
+    -v jenkins_home:/var/jenkins_home \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    jenkins/jenkins:lts
+$ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
 ## Biến môi trường
 
 Hãy chắc chắn thiết lập các biến môi trường sau trong pipeline Jenkins của bạn:
