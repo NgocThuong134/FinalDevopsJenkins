@@ -16,7 +16,7 @@ Trước khi chạy pipeline, hãy đảm bảo bạn đã có:
 - [Tạo CI/CD Pipeline với Jenkins trên Amazon ECS](https://locker.io/vi/blog/cach-tao-ci-cd-pipeline-voi-jenkins)
 - [Hướng dẫn cài đặt Jenkins trên AWS](https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/)
 
-## Hướng dẫn cài đặt Jenkins với Docker
+## Các lệnh cài đặt Jenkins với Docker
   ```
 $ docker pull jenkins/jenkins:lts
 $ docker run -d --name jenkins \
@@ -30,10 +30,6 @@ $ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 $ docker exec -it --user root jenkins /bin/bash
 $ apt-get update
 $ apt-get install -y docker.io
-$ apt-get install -y docker-ce docker-ce-cli containerd.io
-$ docker --version
-$ usermod -aG docker jenkins
-$ docker restart jenkins
 $ chmod 666 /var/run/docker.sock
 ```
 ## Biến môi trường
