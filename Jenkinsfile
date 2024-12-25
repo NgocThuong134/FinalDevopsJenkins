@@ -4,8 +4,8 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'ngocthuong/server-final'
         DOCKER_TAG = 'latest'
-        TELEGRAM_BOT_TOKEN = '7649334871:AAF9YVvIXp3SlCAVS27BOUWMwisFCDZM0y4'
-        TELEGRAM_CHAT_ID = '-1002452635800'
+        TELEGRAM_BOT_TOKEN = '7960940497:AAFt-yWfLOXefdNJbjMIKctr1wYO4aDZako'
+        TELEGRAM_CHAT_ID = '-1002399999415'
         PROD_SERVER = 'ec2-18-141-140-203.ap-southeast-1.compute.amazonaws.com'
         PROD_USER =  'ubuntu'
     }
