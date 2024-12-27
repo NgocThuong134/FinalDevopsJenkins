@@ -19,8 +19,7 @@ func main() {
     router := gin.Default()
 
 	router.GET("/ping", ping)
-	router.GET("/hello", hello)
-
+	
     router.GET("/items", getItems)
     router.GET("/items/:id", getItemByID)
     router.POST("/items", createItem)
@@ -30,9 +29,6 @@ func main() {
     router.Run(":7080")
 }
 
-func hello(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"message": "Hello world !!!"})
-}
 
 func ping(c *gin.Context) {
     c.JSON(http.StatusOK, gin.H{"message": "pong"})
